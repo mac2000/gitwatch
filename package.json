@@ -1,0 +1,17 @@
+{
+  "name": "gitwatch",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "test": "electron . -w"
+  },
+  "devDependencies": {
+    "electron": "^1.4.1",
+    "electron-reload": "^1.1.0"
+  },
+  "dependencies": {
+    "rxjs": "^5.0.2",
+    "simple-git": "^1.65.0"
+  }
+}

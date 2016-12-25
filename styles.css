@@ -1,0 +1,46 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	font: normal 20px/1.3 courier, monospace;
+	color: #444;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td {
+	text-align: left;
+	font-weight: normal;
+	padding: 5px;
+	border: 1px solid #ccc;
+	cursor: default;
+}
+
+tbody tr:nth-of-type(even) {
+	background-color: #f7f7f7;
+}
+
+td:not(.repo) {
+	white-space: nowrap;
+	width: 1px;
+	text-align: center;
+}
+
+td.branch {color:orange}
+
+td.conflicted:not(.conflicted-0),
+td.ahead,
+td.behind,
+td.branch.branch-master {color:red}
+
+td.ahead.ahead-0,
+td.behind.behind-0,
+td.branch.branch-dev {color:green}
+
+td.branch:not(.branch-master),
+td.ahead.ahead-0,
+td.behind.behind-0,
+.muted {opacity: .5;}
